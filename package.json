@@ -1,0 +1,23 @@
+{
+  "name": "roguelike",
+  "version": "1.0.0",
+  "description": "A JavaScript Roguelike",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelbrewster/roguelike.git"
+  },
+  "keywords": [
+    "roguelike"
+  ],
+  "author": "hi@joelbrewster.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joelbrewster/roguelike/issues"
+  },
+  "homepage": "https://github.com/joelbrewster/roguelike#readme"
+}
