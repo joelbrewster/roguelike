@@ -7,9 +7,12 @@ import Font from "overprint/overprint/font";
 import Cell from "overprint/overprint/cell";
 import TextGrid from "overprint/overprint/text-grid";
 
+const width = 40;
+const height = 30;
+
 const grid = new TextGrid(canvas, {
-    width: 80,
-    height: 50,
+    width,
+    height,
     font: Font("Menlo", false, 15)
 });
 
