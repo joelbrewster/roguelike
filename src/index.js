@@ -32,8 +32,8 @@ document.addEventListener("keydown", (ev) => input(ev.key));
 
 function update() {
     if (action) {
-        player.x = player.x + action.x;
-        player.y = player.y + action.y;
+        player.x = Math.min(width - 1, Math.max(0, player.x + action.x));
+        player.y = Math.min(height - 1, Math.max(0, player.y + action.y));
         action = null;
     }
 }
