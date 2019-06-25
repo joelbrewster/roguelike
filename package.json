@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/joelbrewster/roguelike/issues"
   },
-  "homepage": "https://github.com/joelbrewster/roguelike#readme"
+  "homepage": "https://github.com/joelbrewster/roguelike#readme",
+  "dependencies": {
+    "overprint": "^0.7.6"
+  }
 }
