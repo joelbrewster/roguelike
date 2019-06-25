@@ -1,0 +1,9 @@
+* Roguelike
+  #+BEGIN_SRC bash
+
+** Setup
+#!/bin/bash
+npm install -g parcel-bundler
+npm install overprint
+npm start
+  #+END_SRC
