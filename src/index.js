@@ -51,7 +51,7 @@ function update() {
 
 function gameLoop() {
     update();
-    render();
+    screen.render(player);
     requestAnimationFrame(gameLoop);
 }
 
