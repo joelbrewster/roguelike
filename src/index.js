@@ -2,10 +2,8 @@
 
 import TextGrid from "overprint/overprint/text-grid";
 import Font from "overprint/overprint/font";
-import Cell from "overprint/overprint/cell";
+// import Cell from "overprint/overprint/cell";
 import Screen from './screen';
-
-const screen = new Screen(canvas, width, height);
 
 const canvas = document.querySelector('#game');
 
@@ -16,13 +14,9 @@ const player = {
     x: Math.floor(width / 2),
     y: Math.floor(height / 2)
 }
-// const grid = new TextGrid(canvas, {
-//     width,
-//     height,
-//     font: Font("Menlo", false, 15)
-// });
 
 let action;
+
 function input(key) {
     switch(key) {
     case 'k': action = { x: 0, y: -1 }; break;
@@ -43,11 +37,7 @@ function update() {
     }
 }
 
-// function render() {
-//     grid.clear();
-//     grid.writeCell(player.x, player.y, Cell('@'));
-//     grid.render();
-// }
+const screen = new Screen(canvas, width, height);
 
 function gameLoop() {
     update();
