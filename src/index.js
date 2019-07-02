@@ -2,18 +2,18 @@
 
 import TextGrid from "overprint/overprint/text-grid";
 import Font from "overprint/overprint/font";
-// import Cell from "overprint/overprint/cell";
 import Screen from './screen';
+import Entity from './entity';
 
 const canvas = document.querySelector('#game');
 
 const width = 80;
 const height = 50;
 
-const player = {
-    x: Math.floor(width / 2),
-    y: Math.floor(height / 2)
-}
+const player = new Entity(
+    Math.floor(width / 2),
+    Math.floor(height / 2)
+);
 
 let action;
 
@@ -30,7 +30,6 @@ document.addEventListener('keydown', (ev) => input(ev.key));
 
 function update() {
     if (action) {
-        // TODO: Make it so the player repeats the world?
         player.x = Math.min(width - 1, Math.max(0, player.x + action.x));
         player.y = Math.min(height - 1, Math.max(0, player.y + action.y));
         action = null;
