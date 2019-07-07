@@ -1,10 +1,10 @@
 /*jshint esversion: 6 */
 
-import Entity from "./entity";
-import Stage from "./stage";
-import Screen from "./screen";
+import Entity from './entity';
+import Stage from './stage';
+import Screen from './screen';
 
-const canvas = document.querySelector("#game");
+const canvas = document.querySelector('#game');
 
 const width = 80;
 const height = 50;
